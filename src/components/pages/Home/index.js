@@ -3,7 +3,7 @@ import React from 'react'
 
 const index = () => {
     return (
-        <div style={{height: "200vh"}}>
+        <div>
             Home Page
         </div>
     )

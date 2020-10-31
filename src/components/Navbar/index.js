@@ -1,8 +1,7 @@
 import React, {useState} from 'react'
-import { Nav, NavbarContainer, NavIcon, NavMenu, NavItem, SearchContainer, SearchBar, SearchSignContainer, SignIn, SignUp, MobileMenu } from './NavbarElements'
+import { Nav, NavbarContainer, NavIcon, NavMenu, NavItem, NavLink, SearchContainer, SearchBar, SearchSignContainer, SignIn, SignUp, MobileMenu, SignInContainer } from './NavbarElements'
 import { GiHoodedFigure, GiMagnifyingGlass } from "react-icons/gi"
 import { FaBars, FaTimes } from "react-icons/fa"
-import { NavLink } from 'react-router-dom'
 
 const Navbar = () => {
 
@@ -36,8 +35,10 @@ const Navbar = () => {
                         <GiMagnifyingGlass />
                         <SearchBar placeholder="Search..."/>
                     </SearchContainer>
-                    <SignIn to="/signin">Sign In</SignIn>
-                    <SignUp to="/signup">Sign Up</SignUp>
+                    <SignInContainer>
+                        <SignIn to="/signin">Sign In</SignIn>
+                        <SignUp to="/signup">Sign Up</SignUp>
+                    </SignInContainer>
                 </SearchSignContainer>
             </NavbarContainer>
         </Nav>
